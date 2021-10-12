@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <p>아침, 점심, 저녁</p>
+    <p>지금은? <span class="yoilDate"></span></p>
+
+        <script>
+            
+            let today = new Date();
+            //년 월 일 시간 분 초
+            let yoil = today.getHours();
+
+            if(yoil <= 6 && yoil >= 12){
+                document.querySelector('.yoilDate').innerHTML="아침";
+            } else if(yoil <= 12 && yoil >= 17){
+                document.querySelector('.yoilDate').innerHTML="점심";
+            } else if(yoil <= 17 && yoil >= 24){
+                document.querySelector('.yoilDate').innerHTML="저녁";
+            } else{
+                document.querySelector('yoilDate').innerHTML="새벽";
+            }
+              
+
+
+        </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+<script>
+    // document.wirte("<h1>가위,바위,보 맞추기</h1>");
+
+    // let game = prompt ('가위, 바위, 보 중에 하나 선택하세요','가위');
+    // let gameNum;
+
+    // switch (game){
+    // case '가위' : gameNum=1; break;
+    // case '바위' : gmaeNum=2; break;
+    // case '보' : gameNum=3; break;
+    // default:alert('잘못 입력했습니다')
+    // location.reload();
+    // }
+
+    // let com=Math.ceil(Math.random()*3);
+
+  
+    //     document.write("<img src='game_"+com+".png' alt=''>")
+
+
+    // if(gameNum==com){
+    //     document.write("<img src='game_1.png' alt=''>")
+    // } else{
+    //     document.write("<img src='game_2.png' alt=''>")
+    // }
+
+
+    document.write("<h1>컴퓨터 가위, 바위, 보 맞추기</h1>");
+
+    let game = prompt("가위, 바위, 보 중 선택하세요?", "가위");
+    let gameNum;
+    switch(game) {
+    case "가위": gameNum = 1;
+    break;
+    case "바위": gameNum = 2;
+    break;
+    case "보": gameNum = 3;
+    break;
+    default: alert("잘못 작성하셨습니다.");
+    location.reload();
+}
+    let com = Math.ceil( Math.random() * 3 );
+
+    document.write("<img src=math_img_" + com + ".jpg>");
+
+    if(gameNum == com) {
+        document.write("<img src='game_1.jpg'>");
+    } else {
+        document.write("<img src='game_2.jpg'>");
+    }
+    
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

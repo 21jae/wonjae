@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.abc .swiper-wrapper{
+    width: 100%;
+    height: 500px;
+}
+
+.bg1{
+    background: lightblue;
+}
+
+.bg2{
+    background: lightslategrey;
+}
+
+.bg3{
+    background: lightseagreen;
+}
+
+.bg4{
+    background: lightcoral;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+

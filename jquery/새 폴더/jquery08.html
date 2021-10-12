@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+
+<style>
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  .slider img{
+      width: 100%;
+  }
+  .slider-bg{
+      position: relative;
+      width: 100%;
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .slider-bg p{
+      position: absolute;
+      top: 50%;
+      font-size: 2rem;
+      color: palevioletred;
+      
+  }
+
+
+.bg1{
+    background: url('photo4.jpg');
+}
+
+.bg2{
+    background: url('photo4.jpg');
+}
+.bg3{
+    background: url('photo4.jpg');
+}
+.bg4{
+    background: url('photo4.jpg');
+}
+.bg5{
+    background: url('photo4.jpg');
+}
+
+</style>
+
+
+<body>
+
+    <div class="slider">
+        <div class="slider-bg">
+            <img src="assets/images/photo4.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+        <div class="slider-bg">
+            <img src="assets/images/photo5.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+        <div class="slider-bg">
+            <img src="assets/images/photo6.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+        <div class="slider-bg">
+            <img src="assets/images/photo7.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+        <div class="slider-bg">
+            <img src="assets/images/photo8.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+    </div>
+    <div class="slider">
+        <div class="slider-bg bg1">
+            <img src="assets/images/photo4.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+        <div class="slider-bg bg2">
+            <img src="assets/images/photo5.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+        <div class="slider-bg bg3">
+            <img src="assets/images/photo6.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+        <div class="slider-bg bg4">
+            <img src="assets/images/photo7.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+        <div class="slider-bg bg5">
+            <img src="assets/images/photo8.jpg" alt="">
+            <p>공복의 즐거움</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js">
+    </script>
+ 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+
+        $('.slider').slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3
+});
+	
+    </script>
+
+</body>
+</html>

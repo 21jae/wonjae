@@ -1,0 +1,595 @@
+@import url(reset.css);
+@import url(commons.css);
+
+
+/* header nav */
+    
+header{
+    background: black;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+header nav .gnb{
+    display: flex;
+    align-items: center;
+   
+}
+
+header nav .gnb li{
+    padding: 0 20px;
+    
+}
+
+header nav .btn1{
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+
+section{
+    position: relative;
+    
+}
+
+section .video01{
+    width: 1668px;
+}
+
+.video01{
+    width: 100%;
+    overflow: hidden;
+}
+
+.section01 .video-bg{
+    width: 100%;
+    height:960px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;    
+    flex-direction: column;
+    z-index: 99;
+   
+}
+.v
+
+.video-bg img{
+    margin-top: 150px;
+}
+
+
+.row{
+    display: flex;
+}
+
+.col-center{
+    justify-content: center;
+}
+
+.row-center{
+    align-items: center;
+}
+
+.container{
+    width: 1250px;
+    margin: auto;
+}
+
+.col-25{
+    width: 25%;
+}
+
+.col-50{
+    width: 50%;
+}
+
+.col-33{
+    width: 33.33%;
+}
+
+.wrap{  
+    flex-wrap: wrap;
+}
+
+.section02 img{
+    width: 100%;
+}
+
+
+
+/* section02 */
+
+.section02{
+    width: 100%;
+    height: 890px;
+    border-bottom: 8px solid #222;
+    background: rgb(0, 0, 0);
+}
+
+.products-text{
+    padding: 30px 0 60px 0;
+}
+
+.product-main{
+    margin: 0 15px;
+    
+}
+
+.product-main img{
+    transition: all .3s;
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+}
+
+.product-main2 img{
+    transition: all .3s;
+    background-color: rgb(229, 229, 229);
+    border-radius: 5px;
+}
+
+
+.product-main img:hover{
+    transform: scale(1.2);
+}  
+
+
+.bg1 img:hover{
+    background: url('../images/red3.png');
+    border-radius: 100%;
+}
+
+.bg2 img:hover{
+    background: url('../images/red2.jpg');
+    border-radius: 100%;
+}
+
+.bg3 img:hover{
+    /* background: url('../images/beige_3.jpg') ; */
+    background: url('../images/red2.jpg');
+    border-radius: 100%;
+}
+
+.bg4 img:hover{
+    /* background: url('../images/images\ \(2\).jpg') ; */
+    background: url('../images/red2.jpg');
+    border-radius: 100%;
+}
+
+
+.under a:before, .under a:after {
+    content: '';
+    border-bottom: solid 1px white;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+  }
+  
+  .under a:before { left: 0; }
+  .under a:after { right: 0; }
+  
+  .under a:hover:before, .under a:hover:after {
+    width: 50%;
+  }
+  
+  .under a:before, .under a:after {
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+
+  .under a{
+    position: relative;
+  }
+
+ 
+
+
+
+
+
+
+/* section03 */
+
+.section03{
+    width: 100%;
+    height: 800px;
+    background: #000000;
+    padding: 150px 0;
+    border-bottom: 8px solid #222;
+ }
+ 
+ .sec03-title{
+     color: rgb(255, 255, 255);
+     font-size: 3rem;
+     font-weight: 300;
+     padding: 30px 0;
+ }
+ 
+ .section03 .slidewrap{
+     width: 80%;
+     margin: auto;
+    
+ }
+ 
+ .advertising img{
+     width: 100%;
+ }
+
+ .advertising{
+    position: relative;
+}
+
+.advertising .slick-prev{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    cursor: pointer;
+    background: url('../images/wingback.png') no-repeat;
+}
+
+.advertising .slick-next{
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+    cursor: pointer;
+    background: url('../images/wingback2.png') no-repeat;
+}
+
+.advertising button{
+    width: 40px;
+    height: 30px;
+   
+    border: none;
+    
+    z-index: 30;
+}
+
+.advertising .cf-main{
+    position: relative;
+    overflow: hidden;
+}
+
+.top-text{
+    position: absolute;
+    bottom: 4%;
+    left: 45%;
+    z-index: 10;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    transition: all .5s;
+    
+}
+
+.bottom-text{
+    position: absolute;
+    top: 150%;
+    left: 35%;
+    z-index: 10;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 800;
+    transition: all .35s;
+}
+
+.advertising a:hover .top-text{
+    bottom:45%
+}
+.advertising a:hover .bottom-text{
+    top:60%
+}
+
+.advertising a:hover .cf-main::after{
+    opacity: 1;
+}
+
+.advertising a .cf-main::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(149, 149, 149, 0.3);
+    z-index: 199;
+    opacity: 0;
+    transition: all .35s;
+
+}
+
+
+/* .section04 */
+
+
+
+
+.section04{
+    background: rgb(0, 0, 0);
+    border-bottom: 8px solid #222;  
+    height: 800px
+}
+
+.sec04-title{
+    color: black;
+    font-size: 3rem;
+    color: red;
+    font-weight: 800;
+    padding: 60px 0;
+    
+}
+
+
+.newswrap{
+    width: 70%;
+    margin: 0 auto;
+    
+}
+
+.newslist ul li{
+    display: flex;
+    padding: 25px 0;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    
+}
+
+.newslist ul li:first-child{
+    border-top: 1px solid rgb(255, 255, 255);
+}
+
+.news_left img:hover{
+        transform: scale(1.05);  
+        transition-duration: 0.3s;
+}
+
+.news1{
+    width: 100%;
+    transition-duration: 0.3s;
+}
+
+.news_left{
+    overflow: hidden;
+    
+}
+
+.news_right img:hover{
+    transform: scale(1.05);  
+    transition-duration: 0.3s;
+}
+
+.news2{
+width: 100%;
+transition-duration: 0.3s;
+}
+
+.news_right{
+overflow: hidden;
+
+}
+
+
+.scon{
+    margin-left: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.news-span{
+    display: block;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 30px;
+    margin-bottom: 23px;
+    background: #E50914;
+    border-radius: 2px;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+.news_text{
+    margin: 23px 30px;
+    line-height: 23px;
+    font-size: 17px;
+    font-weight: 400;
+}   
+
+.more{
+    text-decoration: underline;
+    margin-left: 30px;
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    
+}
+
+.more a{
+    color: #fff;
+    
+}
+
+
+.btn_go{
+    text-align: center;
+    margin: 60px;
+}
+
+.btn01{
+    color: #fff;
+    background: #E50914;
+    border-radius: 35px;
+    padding: 10px 35px;
+}
+
+
+
+
+.news_bottom a:hover {
+    color: #383ef1;
+  }
+
+  .news_bottom a:before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    
+    opacity: 0;
+  }
+  
+  .news_bottom a:hover:before {
+    opacity: 1.0;
+  }
+  
+  .news_bottom a, .news_bottom a:before {
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+
+
+
+
+
+
+
+
+/* .section05 */
+
+.section05{
+    background: #000;
+    border-bottom: 8px solid #222;
+}
+
+
+
+
+@media (max-width:769px){
+    .col-25{
+        width: 50%;
+    }
+    header nav .gnb{
+        display: none;
+    }
+
+    .btn1{
+        display: block;
+    }
+
+    .kanu-title{
+       font-size: 13px;
+    }
+
+    .section01 .video01{
+        width: 1024px;
+    }
+
+
+}
+
+
+@media (max-width:1025px){
+
+    section{
+        width: 100%;
+        height: 575px;
+        /* background: rgb(67, 67, 67); */
+    }
+
+    /* header */
+
+    .gnb li{
+        display: none;
+    }
+    header .bar_icon{
+        display: block;
+    }
+    .logo img{
+        width: 60%;
+    }
+
+    .section01 .video01{
+        width: 1024px;
+    }
+
+    /* section01 */
+    
+
+    .main-title{
+        color: #fff;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 380px;
+
+    }
+
+    .section01 .video-bg{
+        width: 100%;
+        height: 575px;
+    }
+
+
+    .video-bg img{
+        width:20%;
+    }
+
+
+    /* .section02 */
+
+    .container{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container .row .products-text .kanu-title{
+        font-size: 20px;
+        float: left;
+    }
+
+    .product-main img{
+        width: 100%;
+    }
+
+    .main-text a{
+        text-decoration: none;
+        font-weight: 300;
+        /* letter-spacing: 1px; */
+        font-size: 12.8px;
+    }
+
+    
+    .main-text p{
+        font-weight: 300;
+        font-size: 14px;
+    }
+
+
+
+
+    /* 내일할것:product 누를시 효과 주기  */
+
+
+}
+
+
+@media (min-width:767px){
+    .btn1{
+        display: none;
+    }
+
+
+}
+
