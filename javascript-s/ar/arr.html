@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let arr=[30,"따르릉",true]
+
+        for(let i = 0; i<arr.length; i++){
+            document.write(i+"<br>")
+        }
+
+        for(i in arr){
+            document.write(arr[i]+"<br>")
+        }     
+
+        
+        document.write('----the end----');
+
+        let arr_1=["사당","교대","방배","강남"];
+        let arr_2=["신사","압구정","옥수"];
+
+
+
+        let result1=arr_1.join('-');
+        document.write(result1 + "<br>");    
+        //중간마다 - 추가
+
+        let result2=arr_1.concat(arr_2);
+        document.write(result2 + "<br>");
+        //두개 배열 요소를 연결
+
+        let result3=arr_1.slice(1,3);
+        document.write(result3 + "<br>")
+        //1번 이전 요소를 삭제 , 3번 이후 요소를 삭제
+
+        let result4=arr_1.sort();   
+        document.write(result4 + "<br>")
+        //순서대로 정렬 (ㄱ,ㄴ,ㄷ)
+
+        let result5=arr_1.reverse();
+        document.write(result5 + "<br>")
+        //역순으로 정렬 (ㄷ,ㄴ,ㄱ)
+
+
+
+
+
+
+        </script>
+
+
+</body>
+</html>

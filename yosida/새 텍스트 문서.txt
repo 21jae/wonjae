@@ -1,0 +1,127 @@
+<script src="https://code.jquery.com/jquery-3.2.1.min.js">
+</script>
+
+flex-culimn
+
+eq=지정하는것
+#list li:odd
+odd 홀수
+even 짝수
+first last 첫번째,끝
+
+eq(n) li요소중 n번째 선택후 폰트스타일 기울기 적용
+("#list1 li").eq(n).css
+
+li요소중 n번째 이전 폰트 컬러 점선 적용
+(";; li:lt(n)").css("border","dotted 'N'px 'color')
+
+li요소중 n번째 이후 폰트 컬러 점선 적용
+(";; li:gt(n)").css("border","dotted 'N'px 'color')
+
+"#list li:nth-child('N'n)".css
+'N'의 배수번째 요소만 선택
+
+"#list li:contains('찾고싶은말')".css
+'찾고 싶은 말 아무거나 넣으면 선택됨'
+
+class="theTitle(everything)" 를 새 요소로 바꿈
+$(".theTitle").html("<a href='#'>텍스트</a>")
+
+class="obj1" 요소 복제후 마지막 위치에 추가
+$(".obj1").clone().appendTo("#list")
+
+첫번째 요소 삭제
+.eq(0).remove();
+
+첫번째 요소 클래스 값 반환
+.eq(0).attr("class")l
+
+
+ <script>
+        $(function(){
+            //list1
+
+            // li 요소중 홀수 인덱스만 선택후 배경 색상 적용
+            $("#list1 li:odd").css("background","yellow");
+
+            // li 요소중 짝수 인덱스만 선택후 배경 색상 적용
+            $("#list1 li:even").css("background","pink");
+
+            // li 요소중 첫번째 li 요소만 선택후 폰트 색상 적용
+            $("#list1 li:first").css("color","red");
+
+            // li 요소중 마지막 li 요소만 선택후 폰트 색상 적용
+            $("#list1 li:last").css("color","blue");
+
+            // li 요소중 두번째 li 요소만 선택후 폰트스타일 기울기적용
+            $("#list1 li").eq(1).css("font-style","italic");
+
+            // li 요소중 3번째 이전 요소만 선택후 2px 컬러 점선 적용
+            $("#list1 li:lt(2)").css("border","dotted 2px aqua");
+
+            // li 요소중 3번째 이후 요소만 선택후 2px 컬러 점선 적용
+            $("#list1 li:gt(2)").css("border","dotted 2px purple");
+            
+
+            //
+
+
+            //list2
+
+            // li 요소중 2의 배수번째 요소만 선택
+            $("#list2 li:nth-child(2n)").css("background","orange");
+
+            // li 요소중 내용이 "리스트11"이 포함된 li 요소만 선택
+            $("#list2 li:contains('리스트11')").css("color","red");
+
+            // li요소중 태그 <span>이 포함된 li 요소만 선택
+            $("#list2 li:has('span')").css("color","aqua");
+
+            // li 요소중 class="theObj"인 li요소만 선택
+            $("#list2 li").filter(".theObj").css("font-size","20px")
+
+            //
+
+            // class="theTitle"인 요소에 하위요소를 새요소로 바꿉니다.
+            $(".theTitle").html("<a href='#'>요소 객체 조작</a>");
+
+            // class="theObj1"인 요소에 텍스트를 새 텍스트로 바꿉니다.
+            $(".obj1").text("리스트_2");
+
+            // id="list3"인 요소에 마지막 위치에 새요소를 추가합니다.
+            $("#list3").append("<li>list_6</li>");
+
+            // 요소에 첫 위치에 새 요소를 추가합니다
+            $("#list3").prepend("<li>list_1</li>");
+
+            // 5번째 li 요소 이전에 새 요소를 추가합니다
+            $("<li>insertBefore</li>").insertBefore($("#list3 li").eq(4));
+            
+            // 6번째 li 요소 이후에 새 요소를 추가합니다
+            $("<li>insertAfter</li>").insertAfter($("#list3 li").eq(5));
+
+            //
+
+            //class="obj1"인 요소를 복제후 id="list3"인요소 마지막 위치에 추가
+            $(".obj1").clone().appendTo("#list3");
+            
+            // 하위 li요소중 첫번째 요소 삭제
+            $("#list li").eq(0).remove();
+
+            // li 요소중 첫번째 요소 클래스 값을 반환
+            $("#list li").eq(0).attr("class");
+
+            //li요소중 첫번째 요소에 클래스 값을 새 데이터로 바꿉니다
+            $("#list3 li").eq(0).attr("class","obj2");
+            $(".obj2").css("background-color","yellow");
+
+            // li 요소중 첫번째 요소에 클래스 값을 추가합니다
+            $("#list3 li").eq(0).addClass("obj3");
+            $(".boj3").css("color","red");
+
+        });
+
+    </script>
+
+
+
