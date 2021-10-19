@@ -1,0 +1,277 @@
+@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap');
+
+body{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    color: #000;
+    font-weight: 400;
+    text-underline-position: under;
+}
+
+.main-text{
+    position: relative;
+    text-align: center;
+    top: 49%;
+    color: #fff;
+    z-index: 20;
+   
+}
+
+.poliform-title{
+    font-size: 55px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.sub-title{
+    font-size: 28px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+
+.poliform-title2{
+    color: #000;
+    font-weight: 400;
+    font-size: 35px;
+    padding: 30px 0 50px;
+    margin-left: 25px;
+    
+}
+
+.sec02-title{
+    color: rgba(0,0,0,0.5);
+    font-size: 20px;
+    margin-top: 130px;
+}
+
+.sec02-title p{
+    color: rgba(0,0,0,0.6);
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.main-title{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.main-title a{
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.nav2{
+    margin-bottom: 80px;
+}
+
+/* underline */
+
+.under a:before, .under a:after {
+    content: '';
+    border-bottom: solid 1px rgb(0, 0, 0);
+    position: absolute;
+    bottom: 0;
+    width: 0;
+}
+
+  .under a:before { left: 0; }
+  .under a:after { right: 0; }
+  
+  .under a:hover:before, .under a:hover:after {
+    width: 50%;
+  }
+  
+  .under a:before, .under a:after {
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+  }
+
+  .under a{
+    position: relative;
+  }
+
+
+  /* under finish */
+
+
+.collection{
+    position: relative;
+    text-align: center;
+    top:88%;
+    color: #fff;
+    z-index: 20;
+    text-decoration: underline;
+    text-underline-position: under;
+ 
+}
+
+.text-size1{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.text-size2{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.hide-text{
+    position: relative;
+    text-align: center;
+    top: 49%;
+    color: #fff;
+    z-index: 20;
+    padding-bottom: 10px;
+}
+
+.text-hide{
+    width: 75%;
+    margin: 0 auto;
+    display: none;
+
+}
+
+.apper{
+   font-size: 16px;
+   color:#fff;
+    line-height: 25px;
+    font-weight: 400;
+}
+
+
+
+/* section04 */
+
+.history-title{
+    color: #000;
+    font-weight: 500;
+    font-size: 35px;
+    margin-top: 125px;
+}
+
+.introduce{
+    color: rgba(0,0,0,0.6);
+    font-size: 18px;
+    line-height: 30px;  
+    font-weight: 500;
+    margin-top: 100px;
+}
+
+
+.factory-text{
+    text-align: center;
+}
+
+
+.distance1{
+    margin: 125px 0;
+}
+
+.distance2{
+    margin-bottom: 125px;
+}
+
+.origins-text{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+
+/* section05 */
+
+.timelineX h2{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.timelineX h1{
+    color: #000;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin: 20px 0 30px 0;
+}
+
+.timelineX p{
+    color: #000;
+    line-height: 28px;  
+    font-weight: 300;
+    font-size: 18px;
+}   
+
+.timelineX{
+   text-align: center
+   
+}
+
+.balance{   
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 35%;
+}
+
+
+/* section06 */
+
+    .col25 h1{
+        text-align: center;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 500;
+ 
+
+    }
+
+    .lorem{
+        color: rgba(0,0,0,0.7);
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 28px;
+        margin: 80px 0 140px 0;
+    }
+
+    /* section08 */
+
+
+    .ft_inner ul li a {
+        font-weight: 500;
+        font-size: 17px;
+        color: rgb(0, 0, 0, 0.7);
+
+    }
+
+    .ft_left h3 {
+        margin: 40px 0 20px 0;
+        font-weight: 400;
+        font-size: 20px;
+
+    }
+
+    .ft_left p {
+        line-height: 25px;
+        font-weight: 300;
+        font-size: 17px;
+ 
+    }
+
+    .ft_under p {
+        font-size: 14px;
+        color: rgba(0,0,0,0.8);
+        margin-top: 50px;
+        justify-content: center;
+        text-align: center;
+      }
