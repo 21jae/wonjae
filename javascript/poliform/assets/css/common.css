@@ -1,4 +1,4 @@
-@import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+    @import url(https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
 
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
@@ -232,8 +232,14 @@ a{
         margin-top: 20px;
         font-size: 20px;
         font-weight: 500;
- 
+    }
 
+    .col25 a{
+        font-size: 21px;
+    }
+
+    .zica-ct h1{
+        text-align: center;
     }
 
     .lorem{
